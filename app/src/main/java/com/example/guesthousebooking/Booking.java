@@ -1,8 +1,11 @@
 package com.example.guesthousebooking;
 
+import android.content.Context;
+
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.Date;
+
 
 public class Booking
 {
@@ -90,5 +93,15 @@ public class Booking
     public String toString()
     {
         return String.format("Booking Id : " + bookingId + "\nUser Id : " + userId + "\nBooking Status : " + bookingStatus);
+    }
+
+    public void sendMail(String email, Context page)
+    {
+        String mail = email;
+        String subject = "NITC Guesthoust Booking";
+        String message = "Your Booking is COnfirmed";
+        JavaMailAPI javaMailAPI = new JavaMailAPI(page, mail, subject, message);
+        javaMailAPI.execute();
+
     }
 }

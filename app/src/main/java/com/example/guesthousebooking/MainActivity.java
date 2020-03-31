@@ -153,12 +153,12 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    public void onStart()
+    /*public void onStart()
     {
         super.onStart();
         FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
         updateUI(currentUser);
-    }
+    }*/
 
     private void updateUI(FirebaseUser user)
     {
