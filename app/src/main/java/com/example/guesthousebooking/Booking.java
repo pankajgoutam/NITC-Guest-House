@@ -95,11 +95,18 @@ public class Booking
         return String.format("Booking Id : " + bookingId + "\nUser Id : " + userId + "\nBooking Status : " + bookingStatus);
     }
 
-    public void sendMail(String email, Context page)
+    public void sendMail(Context page, int type)
     {
-        String mail = email;
+        String mail = this.userId;
+        String details = "Your Booking Details: \n Booking ID : " + this.bookingId + "\nBooking Date : " + this.bookingDate + "\n No. of Rooms : " + this.noOfRooms + "\n Check In Date : " + this.checkInDate + "\n Check Out Date : " + this.checkOutDate;
+
         String subject = "NITC Guesthoust Booking";
-        String message = "Your Booking is COnfirmed";
+        String message = "";
+        if(type == 1)
+            message = "Your Booking is Confirmed";
+        else if(type == 2)
+            message = "Your Booking has been Rejected due to certain Conditions";
+        message = message + "\n" + details;
         JavaMailAPI javaMailAPI = new JavaMailAPI(page, mail, subject, message);
         javaMailAPI.execute();
 

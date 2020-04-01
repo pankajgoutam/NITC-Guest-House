@@ -220,18 +220,18 @@
     </TableLayout>
 
     <Button
-        android:id="@+id/B3"
+        android:id="@+id/B1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="58dp"
         android:layout_marginLeft="58dp"
         android:text="Confirm"
-        app:layout_constraintBottom_toBottomOf="@+id/B2"
+        app:layout_constraintBottom_toBottomOf="@+id/B1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/B2" />
+        app:layout_constraintTop_toTopOf="@+id/B1" />
 
     <Button
-        android:id="@+id/B2"
+        android:id="@+id/B1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="63dp"

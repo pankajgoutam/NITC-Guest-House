@@ -22,13 +22,10 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.example.guesthousebooking.AbstractGuestHouse;
-import com.example.guesthousebooking.AdminViewBooking;
 import com.example.guesthousebooking.Booking;
 import com.example.guesthousebooking.GuestHouse;
 import com.example.guesthousebooking.Home;
 import com.example.guesthousebooking.R;
-import com.example.guesthousebooking.User;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.firebase.database.DataSnapshot;
@@ -80,9 +77,9 @@ public class MakeBooking extends Fragment {
         View V = inflater.inflate(R.layout.make_booking_fragment, container, false);
 
 
-        Book= V.findViewById(R.id.B3);
+        Book= V.findViewById(R.id.B1);
         CIB = V.findViewById(R.id.B1);
-        COB= V.findViewById(R.id.B2);
+        COB= V.findViewById(R.id.B1);
         CI = V.findViewById(R.id.ET1);
         CO = V.findViewById(R.id.ET2);
         number = V.findViewById(R.id.S1);

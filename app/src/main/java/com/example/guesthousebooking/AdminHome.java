@@ -140,8 +140,8 @@ public class AdminHome extends AppCompatActivity {
     }
     public void showAllBill(View view)
     {
-        Booking O = new Booking();
-        O.sendMail("yogijerrybear88@gmail.com", this);
+        Intent intent = new Intent(this,AdminShowBill.class);
+        startActivity(intent);
     }
     public void manageBooking(View view)
     {

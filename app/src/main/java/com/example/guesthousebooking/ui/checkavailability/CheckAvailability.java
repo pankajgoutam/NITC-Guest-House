@@ -41,7 +41,6 @@ public class CheckAvailability extends Fragment {
     int month;
     int day;
     Calendar calendar;
-    //private DatabaseReference ref;
     int vacant = 10;
 
 
@@ -55,8 +54,8 @@ public class CheckAvailability extends Fragment {
         View V = inflater.inflate(R.layout.check_availability_fragment, container, false);
 
 
-        Click = V.findViewById(R.id.B3);
-        Check = V.findViewById(R.id.B2);
+        Click = V.findViewById(R.id.B1);
+        Check = V.findViewById(R.id.B1);
         AD = V.findViewById(R.id.ET1);
         AD.setEnabled(false);
 
